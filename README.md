@@ -19,54 +19,39 @@ Dashboard interaktif (Next.js)
 
 Integrasi API Laravel dengan frontend
 
-📂 Struktur Project
-library-app-sofyan/
-│── library-frontend/   # Next.js + TypeScript
-│── library_backend/    # Laravel
-│── README.md           # Dokumentasi utama (file ini)
 
 🛠️ Cara Menjalankan
+
 1️⃣ Jalankan Backend (Laravel)
 
-Masuk ke folder backend
-
+- Masuk ke folder backend
 cd library_backend
 
 
-Install dependency
-
+- Install dependency
 composer install
 
-
-Copy file .env.example → rename jadi .env, lalu sesuaikan database.
-
-Generate key & migrate database
+- Copy file .env.example → rename jadi .env, lalu sesuaikan database.
+- Generate key & migrate database
 
 php artisan key:generate
 php artisan migrate --seed
 
-
-Jalankan server
-
+- Jalankan server
 php artisan serve
-
 
 Backend jalan di: http://127.0.0.1:8000
 
+
 2️⃣ Jalankan Frontend (Next.js)
 
-Masuk ke folder frontend
-
+- Masuk ke folder frontend
 cd library-frontend
 
-
-Install dependency
-
+- Install dependency
 npm install
 
-
-Jalankan development server
-
+- Jalankan development server
 npm run dev
 
 Frontend jalan di: http://localhost:3000
